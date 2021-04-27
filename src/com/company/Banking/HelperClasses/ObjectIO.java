@@ -3,9 +3,9 @@ import java.io.*;
 
 
 public class ObjectIO {
-    public static void WriteObjectToFile(String filepath, Object object){
+    public static void WriteObjectToFile(String absolutePath, Object object){
         try{
-            FileOutputStream fileOut = new FileOutputStream(filepath, false);
+            FileOutputStream fileOut = new FileOutputStream(absolutePath, false);
             ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
             objectOut.writeObject(object);
             objectOut.flush();
@@ -21,9 +21,9 @@ public class ObjectIO {
 
 
     }
-    public static Object ReadObjectFromFile(String filepath){
+    public static Object ReadObjectFromFile(String absolutePath){
         try{
-            FileInputStream fileIn = new FileInputStream(filepath);
+            FileInputStream fileIn = new FileInputStream(absolutePath);
             ObjectInputStream objectIn = new ObjectInputStream(fileIn);
             Object object = objectIn.readObject();
             objectIn.close();
