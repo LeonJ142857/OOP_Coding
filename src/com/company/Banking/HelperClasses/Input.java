@@ -1,9 +1,13 @@
-package com.company.Banking;
+package com.company.Banking.HelperClasses;
 import java.util.HashMap;
 
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
+
+import com.company.Banking.MainClasses.Account;
+import com.company.Banking.MainClasses.Bank;
+import com.company.Banking.MainClasses.Customer;
 import org.javatuples.Pair;
 public class Input {
     public static HashMap<String, Bank> banks;

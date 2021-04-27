@@ -1,4 +1,4 @@
-package com.company.Banking;
+package com.company.Banking.MainClasses;
 
 import java.io.Serializable;
 
