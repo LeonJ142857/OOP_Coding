@@ -1,0 +1,5 @@
+a) Add another private attribute of type String with name marking "private String marking".
+   Then, in the constructor of Specimen add another parameter String marking.
+   Inside the definition of the constructor, add this.marking = marking.
+b) inside Driver.java
+c) inside Driver.java

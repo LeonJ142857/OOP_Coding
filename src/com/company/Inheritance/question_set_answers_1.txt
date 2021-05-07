@@ -1,0 +1,22 @@
+a) Genus is the parent class of Species, while Species is a child class of Genus.
+b) Species is an attribute of Specimen, therefore Species is associated with the Specimen class and vice versa.
+   The association is of aggregation because the attribute class (Specimen) can exist independently of Specimen,
+   meaning, the Species Class can still be on their own without the Specimen Class. Another way to say it is,
+   even though the specimen dies the species is still available as long as not all specimen with that species name dies.
+c) |Species                        |
+   | -speciesName: String          |
+   | ----------------------------- |
+   | +Species(s: String, g: String)|
+   | +setSpeciesName(s: String)    |
+   | +getSpeciesName(): String     |
+   | +toString(): String           |
+   | +equals(s: Species): boolean  |
+d) first benefit: methods that are already defined in the parent classes can be used directly or be overriden
+                    in the child classes. for example, the method toString inside of Species uses the toString method
+                    of its parent, which is Genus. Inheritance reduces code redundancy by minimizing code duplication.
+   second benefit: improves readability of the code overall because the class definition becomes shorter and
+                   not polluted by duplicated methods and / or duplicated attributes. Shorter code means less complexity
+                   to process and simplifies the development process.
+e) i) Even though the getGenus() method is not defined inside the Species class the toString() method still runs
+      because the getGenus() method is defined in its parent class Genus.
+   ii) Inheritance.

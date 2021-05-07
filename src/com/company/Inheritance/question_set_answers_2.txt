@@ -1,0 +1,20 @@
+a) Encapsulation is a concept where a class binds multiple data / attributes and functions / behaviors / methods
+    together, while at the same time hiding the inside attributes, only exposing the necessary interface
+    (public methods), while keeping the data inside invisible to user / other programmers
+    to maintain stability of the object's behavior.
+    Usually this is achieved by using access modifier such as public, protected, private, and in Java also the default
+    access modifier (no modifier).
+b)  first benefit: maintains the stability of object's behavior by protecting it from unwanted access by client
+                   (either user or other programmer who uses the object)
+    second benefit: able to make attributes in the class read-only or write-only  or both depending on your needs
+                    by giving the attributes getter and setter methods.
+c) public void setName(String a)
+d) private String name
+e) inside Genus.java
+f) advantage: by having Specimen as the sub-class of Species,
+              all the methods that Species has won't have
+              to be redefined inside Specimen, only overriding and adding
+              new methods as necessary.
+   disadvantage: the disadvantage of this will be that Specimen object might not be usable
+                 if the Species object have not been initialized.
+

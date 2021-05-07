@@ -1,0 +1,6 @@
+a) 1. having a unique set of attributes and a unique set of operations
+   2. implementation-independent: implementation of the operations
+      is not yet provided, only what it can do in rough terms
+b) inside Driver.java
+c) inside Driver.java
+d) inside Driver.java
