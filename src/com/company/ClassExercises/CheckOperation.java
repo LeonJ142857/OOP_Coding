@@ -1,4 +1,4 @@
-package com.company.ClassExercises.DefaultImplementation;
+package com.company.ClassExercises;
 
 public class CheckOperation {
     // access modifier is default because I have another class with the same name in another package
@@ -9,5 +9,12 @@ public class CheckOperation {
         else if(operation instanceof SubtractionOperation)
             return "subtraction";
         return "other operation";
+    }
+
+    static String check(SubtractionOperation subtraction){
+        return "subtraction";
+    }
+    static String check(AdditionOperation addition){
+        return "addition";
     }
 }

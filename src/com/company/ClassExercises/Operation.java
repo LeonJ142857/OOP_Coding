@@ -1,4 +1,4 @@
-package com.company.ClassExercises.DefaultImplementation;
+package com.company.ClassExercises;
 
 public abstract class Operation {
     // I put static here, because it is the only place possible that won't generate error
@@ -15,6 +15,6 @@ public abstract class Operation {
     // to put the static keyword is on the attributes as it is the only place that will not create problems
     // for the compiler.
     // I added static keyword to the method in OperationRuntime too, see the explanation there.
-    static int x, y;
+    int x, y;
     public abstract int calculate();
 }
